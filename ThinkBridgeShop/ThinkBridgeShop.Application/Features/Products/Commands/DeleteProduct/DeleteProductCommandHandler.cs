@@ -1,6 +1,10 @@
 ﻿using System;
+using AutoMapper;
+using FluentValidation;
 using MediatR;
+using ThinkBridgeShop.Application.Features.Products.Commands.CreateProduct;
 using ThinkBridgeShop.Application.Features.Products.Commands.UpdateProduct;
+using ThinkBridgeShop.Domain.Entities;
 
 namespace ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct
 {
@@ -8,9 +12,31 @@ namespace ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct
     {
       
 
-        public Task<Unit> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await Task.Run(() =>
+            {
+                return Unit.Value;
+
+            });
+        }
+
+        public partial class MappingProfile : Profile
+        {
+            public MappingProfile()
+            {
+                CreateMap<DeleteProductCommand, Product>().ReverseMap();
+            }
+        }
+
+        public class DeleteProductCommandValidator : AbstractValidator<DeleteProductCommand>
+        {
+            public DeleteProductCommandValidator()
+            {
+
+            }
+
+
         }
     }
 }
