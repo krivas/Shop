@@ -4,28 +4,53 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThinkBridgeShop.Domain/Entities/Product.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThinkBridgeShop.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommandHandler.cs">
     <Files>
-      <File FileName="ThinkBridgeShop.Infrastructure/Class1.cs" Line="1" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Queries/GetClients/GetClientsQuery..cs" Line="1" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Queries/GetClients/GetClientsHandler.cs" Line="1" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProduct.cs" Line="1" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommandHandler.cs" Line="1" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/DeleteProduct/DeleteProductCommand.cs" Line="1" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/DeleteProduct/DeleteProductCommandHandler.cs" Line="1" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommand.cs" Line="1" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommandHandler.cs" Line="1" Column="1" />
-      <File FileName="ThinkBridgeShop.Domain/Entities/Product.cs" Line="1" Column="1" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommandHandler.cs" Line="7" Column="84" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/DeleteProduct/DeleteProductCommand.cs" Line="8" Column="36" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/DeleteProduct/DeleteProductCommandHandler.cs" Line="7" Column="45" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommand.cs" Line="8" Column="8" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommandHandler.cs" Line="6" Column="47" />
+      <File FileName="ThinkBridgeShop.Domain/Entities/Product.cs" Line="6" Column="10" />
+      <File FileName="ThinkBridgeShop/Program.cs" Line="7" Column="39" />
+      <File FileName="ThinkBridgeShop/StartupExtension.cs" Line="65" Column="1" />
+      <File FileName="ThinkBridgeShop/WeatherForecast.cs" />
+      <File FileName="ThinkBridgeShop/ClientApp/proxy.conf.js" />
+      <File FileName="ThinkBridgeShop.Infrastructure/Interfaces/IRepository.cs" Line="19" Column="1" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommand.cs" Line="11" Column="43" />
+      <File FileName="ThinkBridgeShop/Controllers/ProducsController.cs" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Queries/GetProducts/GetProductsQuery..cs" Line="9" Column="9" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Queries/GetProducts/GetProductsQueryHandler.cs" Line="6" Column="3" />
+      <File FileName="ThinkBridgeShop.Domain/Dtos/ProductDto.cs" Line="6" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ThinkBridgeShop" expanded="True">
-            <Node name="ThinkBridgeShop" expanded="True" selected="True" />
+            <Node name="ThinkBridgeShop" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="ThinkBridgeShop.Application" expanded="True" selected="True">
+              <Node name="Features" expanded="True">
+                <Node name="Products" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="CreateProduct" expanded="True" />
+                    <Node name="DeleteProduct" expanded="True" />
+                    <Node name="UpdateProduct" expanded="True" />
+                  </Node>
+                  <Node name="Queries" expanded="True">
+                    <Node name="GetProducts" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
             <Node name="ThinkBridgeShop.Domain" expanded="True">
+              <Node name="Dtos" expanded="True" />
               <Node name="Entities" expanded="True" />
             </Node>
-            <Node name="ThinkBridgeShop.Infrastructure" expanded="True" />
+            <Node name="ThinkBridgeShop.Infrastructure" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -35,5 +60,5 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.ThinkBridgeShop.Application FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.ThinkBridgeShop.Domain FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.ThinkBridgeShop FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.ThinkBridgeShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

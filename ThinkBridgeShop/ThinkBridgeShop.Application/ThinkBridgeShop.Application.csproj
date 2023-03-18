@@ -24,4 +24,14 @@
     <Folder Include="Features\Products\Commands\UpdateProduct\" />
     <Folder Include="Features\Products\Commands\DeleteProduct\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThinkBridgeShop.Domain\ThinkBridgeShop.Domain.csproj" />
+  </ItemGroup>
 </Project>

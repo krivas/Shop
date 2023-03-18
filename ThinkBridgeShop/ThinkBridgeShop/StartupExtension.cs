@@ -29,11 +29,6 @@ namespace ThinkBridgeShop
                         Name = "Kevin Rivas",
                         Email = "krivas.reyes@gmail.com",
                         Url = new Uri("https://www.linkedin.com/in/krivasreyes/")
-                    },
-                    License = new OpenApiLicense
-                    {
-                        Name = "Use under Open Source",
-                        Url = new Uri("https://rijsat.com/license"),
                     }
                 });
             });
