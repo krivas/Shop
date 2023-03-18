@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{547E27FB-AE34-4D47-AB56-A16090FE2C48}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ThinkBridgeShop.Infrastructure FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ThinkBridgeShop" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ThinkBridgeShop.Application FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.ThinkBridgeShop.Domain FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.ThinkBridgeShop FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
