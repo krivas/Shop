@@ -2,42 +2,50 @@
 using AutoMapper;
 using FluentValidation;
 using MediatR;
-using ThinkBridgeShop.Application.Features.Products.Commands.CreateProduct;
-using ThinkBridgeShop.Application.Features.Products.Commands.UpdateProduct;
 using ThinkBridgeShop.Domain.Entities;
+using ThinkBridgeShop.Infrastructure.Interfaces;
 
 namespace ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct
 {
 	public class DeleteProductCommandHandler : IRequestHandler<DeleteProductCommand>
     {
-      
+        private readonly IRepositoryAsync<Product> _productRepository;
+        private readonly IMapper _mapper;
+
+        public DeleteProductCommandHandler(IRepositoryAsync<Product> productRepository, IMapper mapper)
+        {
+            _productRepository = productRepository;
+            _mapper = mapper;
+        }
 
         public async Task<Unit> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
         {
-            return await Task.Run(() =>
-            {
-                return Unit.Value;
-
-            });
+            var product = _mapper.Map<Product>(request);
+            product.Price = decimal.Round(product.Price, 2, MidpointRounding.AwayFromZero);
+            var exists = await _productRepository.ExistsAsync(product.Id);
+            if (exists)
+                await _productRepository.DeleteAsync(product);
+            return Unit.Value;
         }
 
-        public partial class MappingProfile : Profile
+       
+    }
+    public partial class MappingProfile : Profile
+    {
+        public MappingProfile()
         {
-            public MappingProfile()
-            {
-                CreateMap<DeleteProductCommand, Product>().ReverseMap();
-            }
+            CreateMap<DeleteProductCommand, Product>().ReverseMap();
         }
+    }
 
-        public class DeleteProductCommandValidator : AbstractValidator<DeleteProductCommand>
+    public class DeleteProductCommandValidator : AbstractValidator<DeleteProductCommand>
+    {
+        public DeleteProductCommandValidator()
         {
-            public DeleteProductCommandValidator()
-            {
-
-            }
-
 
         }
+
+
     }
 }
 

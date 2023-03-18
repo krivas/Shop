@@ -31,9 +31,15 @@ namespace ThinkBridgeShop.Infrastructure.Repositories
 
         }
 
-        public async Task<T> GetByIdAsync(object id)
+        public async Task<bool> ExistsAsync(object id)
         {
-            return await _context.Set<T>().FindAsync(id);
+            var entity = await _context.Set<T>().FindAsync(id);
+            if (entity != null)
+            {
+                _context.Entry(entity).State = EntityState.Detached;
+                return true;
+            }
+            return false;
         }
 
         public async Task<IEnumerable<T>> GetAllAsync()

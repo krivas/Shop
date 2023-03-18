@@ -12,7 +12,7 @@ namespace ThinkBridgeShop.Infrastructure.Interfaces
         Task<IEnumerable<T>> GetAllAsync();
 
 
-        Task<T> GetByIdAsync(object id);
+        Task<bool> ExistsAsync(object id);
     }
 }
 
