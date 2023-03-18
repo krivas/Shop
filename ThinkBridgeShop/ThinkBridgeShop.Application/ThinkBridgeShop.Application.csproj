@@ -6,4 +6,22 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Features\" />
+    <None Remove="Features\Products\" />
+    <None Remove="Features\Products\Commands\" />
+    <None Remove="Features\Products\Queries\" />
+    <None Remove="Features\Products\Commands\CreateProduct\" />
+    <None Remove="Features\Products\Commands\UpdateProduct\" />
+    <None Remove="Features\Products\Commands\DeleteProduct\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Features\Products\" />
+    <Folder Include="Features\Products\Commands\" />
+    <Folder Include="Features\Products\Queries\" />
+    <Folder Include="Features\Products\Commands\CreateProduct\" />
+    <Folder Include="Features\Products\Commands\UpdateProduct\" />
+    <Folder Include="Features\Products\Commands\DeleteProduct\" />
+  </ItemGroup>
 </Project>
