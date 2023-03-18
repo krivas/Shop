@@ -7,7 +7,7 @@ using ThinkBridgeShop.Application.Features.Products.Commands.CreateProduct;
 using ThinkBridgeShop.Application.Features.Products.Commands.UpdateProduct;
 using ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct;
 
-namespace ThinkBridgeShop.Application.Features
+namespace ThinkBridgeShop.Application
 {
     public static class ApplicationServicesRegistration
     {

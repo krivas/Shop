@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.OpenApi.Models;
+using ThinkBridgeShop.Application;
 
 namespace ThinkBridgeShop
 {
@@ -11,6 +12,7 @@ namespace ThinkBridgeShop
             builder.Services.AddControllersWithViews();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwagger();
+            builder.Services.AddApplicationServices();
             return builder.Build();
         }
 

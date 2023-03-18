@@ -1,0 +1,15 @@
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/bin/Debug/net6.0/ThinkBridgeShop.Application.deps.json
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/bin/Debug/net6.0/ThinkBridgeShop.Application.dll
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/bin/Debug/net6.0/ThinkBridgeShop.Application.pdb
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/bin/Debug/net6.0/ThinkBridgeShop.Domain.dll
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/bin/Debug/net6.0/ThinkBridgeShop.Domain.pdb
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/obj/Debug/net6.0/ThinkBridgeShop.Application.csproj.AssemblyReference.cache
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/obj/Debug/net6.0/ThinkBridgeShop.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/obj/Debug/net6.0/ThinkBridgeShop.Application.AssemblyInfoInputs.cache
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/obj/Debug/net6.0/ThinkBridgeShop.Application.AssemblyInfo.cs
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/obj/Debug/net6.0/ThinkBridgeShop.Application.csproj.CoreCompileInputs.cache
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/obj/Debug/net6.0/ThinkBridgeShop.Application.csproj.CopyComplete
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/obj/Debug/net6.0/ThinkBridgeShop.Application.dll
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/obj/Debug/net6.0/refint/ThinkBridgeShop.Application.dll
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/obj/Debug/net6.0/ThinkBridgeShop.Application.pdb
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/obj/Debug/net6.0/ref/ThinkBridgeShop.Application.dll
