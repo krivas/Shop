@@ -1,0 +1,15 @@
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/bin/Debug/net6.0/ThinkBridgeShop.Infrastructure.deps.json
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/bin/Debug/net6.0/ThinkBridgeShop.Infrastructure.dll
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/bin/Debug/net6.0/ThinkBridgeShop.Infrastructure.pdb
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/bin/Debug/net6.0/ThinkBridgeShop.Domain.dll
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/bin/Debug/net6.0/ThinkBridgeShop.Domain.pdb
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/ThinkBridgeShop.Infrastructure.csproj.AssemblyReference.cache
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/ThinkBridgeShop.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/ThinkBridgeShop.Infrastructure.AssemblyInfoInputs.cache
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/ThinkBridgeShop.Infrastructure.AssemblyInfo.cs
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/ThinkBridgeShop.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/ThinkBridgeShop.Infrastructure.csproj.CopyComplete
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/ThinkBridgeShop.Infrastructure.dll
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/refint/ThinkBridgeShop.Infrastructure.dll
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/ThinkBridgeShop.Infrastructure.pdb
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/ref/ThinkBridgeShop.Infrastructure.dll

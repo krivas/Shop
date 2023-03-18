@@ -1046,6 +1046,16 @@
             "rid": "win"
           }
         }
+      },
+      "ThinkBridgeShop.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ThinkBridgeShop.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ThinkBridgeShop.Domain.dll": {}
+        }
       }
     }
   },
@@ -3215,11 +3225,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ThinkBridgeShop.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ThinkBridgeShop.Domain/ThinkBridgeShop.Domain.csproj",
+      "msbuildProject": "../ThinkBridgeShop.Domain/ThinkBridgeShop.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4",
+      "ThinkBridgeShop.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3247,7 +3263,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Domain/ThinkBridgeShop.Domain.csproj": {
+              "projectPath": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Domain/ThinkBridgeShop.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
