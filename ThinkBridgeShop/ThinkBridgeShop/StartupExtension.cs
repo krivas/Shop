@@ -13,8 +13,9 @@ namespace ThinkBridgeShop
             builder.Services.AddControllersWithViews();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwagger();
-            builder.Services.AddApplicationServices();
             builder.Services.AddDataServicesRegistration(builder.Configuration);
+            builder.Services.AddApplicationServices();
+
             return builder.Build();
         }
 

@@ -33,5 +33,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ThinkBridgeShop.Domain\ThinkBridgeShop.Domain.csproj" />
+    <ProjectReference Include="..\ThinkBridgeShop.Infrastructure\ThinkBridgeShop.Infrastructure.csproj" />
   </ItemGroup>
 </Project>
