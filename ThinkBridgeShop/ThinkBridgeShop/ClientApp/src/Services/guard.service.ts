@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, map, of, catchError } from 'rxjs';
 import { AuthService } from './auth.service';
 
 
@@ -13,13 +13,15 @@ export class GuardService implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if (this.authService.isLoggedIn())
+      if (this.authService.isLoggedIn())
        return true;
-    else 
-    {
-      this.router.navigate(['/login']) ;
-      return false;
-    } 
+      else 
+      {
+        this.router.navigate(['']) ;
+        return false;
+      }
+
+     
   }
   
 }

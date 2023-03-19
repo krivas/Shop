@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { from } from 'rxjs';
 import { Product } from '../../Models/Product';
-import { DataService } from '../../Services/data.service';
 import { ProductService } from '../../Services/product.service';
 
 @Component({
@@ -11,39 +11,72 @@ import { ProductService } from '../../Services/product.service';
 export class ProductComponent implements OnInit {
   products:Product[]=[];
   displayError:string="";
-  product={name:"",price:"",description:""};
+  product: Product ={name:"",price:undefined,description:"",id:0};
 
-  constructor(private productService: ProductService,private dataService:DataService){}
+  constructor(private productService: ProductService){}
   
   isLoggedIn:boolean=false;
   ngOnInit()
   {
     this.getProducts();
-    this.dataService.getData().subscribe(response=>this.isLoggedIn=response);
   }
   getProducts()
   {
-
     this.productService.getProducts()
     .subscribe(response=> this.products=response);
   }
-
+  clearForm()
+  {
+    this.product={name:"",price:undefined,description:"",id:0};
+  }
   submit(form:NgForm)
   {
+    if (form.valid)
+    {
+      this.productService.addProduct(this.product).subscribe(
+        response=> {
+          console.log(response);
+           this.product.id=response;
+           this.products.push(this.product);
+           this.clearForm();
+           form.reset();
+        }, error => {
+          this.displayError = error.error;
+        });
+      
+    }
 
   }
 
   delete(product:Product,index:number)
   {
+     this.productService.deleteProduct(product.id)
+     .subscribe(response=>{
+      this.products.splice(index,1);
+    });
+  }
+  edit(form:NgForm)
+  {
+    if (form.valid)
+    {
+      this.productService.updateProduct(this.product).subscribe(
+        response=> {
+          console.log(response);
+           this.clearForm();
+           form.reset();
+           this.getProducts();
+        }, error => {
+          this.displayError = error.error;
+        });
+      
+    }
 
   }
-  edit(product:Product)
+  copyProduct(product:Product)
   {
-
-  }
-  editProduct(form:NgForm)
-  {
-
+     const cloneProduct:Product={name:product.name,id:product.id,description:product.description,price:product.price};
+     this.product=cloneProduct;
+   
   }
 }
 

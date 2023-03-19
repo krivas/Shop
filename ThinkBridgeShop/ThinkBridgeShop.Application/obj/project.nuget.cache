@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4gOFofv+HbMhSFdXU4G7LffoYRRKCJSXm4vUZC+U0u6pF27yjzA7J7fYTOkplwuT2GKAzj0Bq9gmBpCVro1aWQ==",
+  "dgSpecHash": "2QKNEN1DWoW+3brir5XtfGMpHJZITRibysBBDqMKrBGd8y7uxaWc4WtnVfQPeiSVIwxC9mq38/boXR1DOQZd9w==",
   "success": true,
   "projectFilePath": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/ThinkBridgeShop.Application.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,9 @@
     "/Users/kevinrivas/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "/Users/kevinrivas/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.15/microsoft.aspnetcore.cryptography.internal.6.0.15.nupkg.sha512",
+    "/Users/kevinrivas/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/6.0.15/microsoft.aspnetcore.cryptography.keyderivation.6.0.15.nupkg.sha512",
+    "/Users/kevinrivas/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/6.0.15/microsoft.aspnetcore.identity.entityframeworkcore.6.0.15.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/microsoft.data.sqlclient/5.0.1/microsoft.data.sqlclient.5.0.1.nupkg.sha512",
@@ -26,6 +29,8 @@
     "/Users/kevinrivas/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/kevinrivas/.nuget/packages/microsoft.extensions.identity.core/6.0.15/microsoft.extensions.identity.core.6.0.15.nupkg.sha512",
+    "/Users/kevinrivas/.nuget/packages/microsoft.extensions.identity.stores/6.0.15/microsoft.extensions.identity.stores.6.0.15.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",

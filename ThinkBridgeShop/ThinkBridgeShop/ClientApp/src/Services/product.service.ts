@@ -17,15 +17,15 @@ export class ProductService {
     return this.http.get<Product[]>(this.apiUrl);
   }
 
-  addProduct(product: Product): Observable<Product> {
-    return this.http.post<Product>(this.apiUrl, product);
+  addProduct(product: Product): Observable<number> {
+    return this.http.post<number>(this.apiUrl, product);
   }
 
   updateProduct(product: Product): Observable<any> {
     return this.http.put<any>(`${this.apiUrl}`, product);
   }
 
-  deleteProduct(id: string): Observable<any> {
+  deleteProduct(id: number): Observable<any> {
     return this.http.delete<any>(`${this.apiUrl}/${id}`);
   }
 }

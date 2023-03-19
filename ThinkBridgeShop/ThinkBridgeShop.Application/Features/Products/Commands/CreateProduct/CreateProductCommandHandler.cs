@@ -8,7 +8,7 @@ using ThinkBridgeShop.Infrastructure.Interfaces;
 
 namespace ThinkBridgeShop.Application.Features.Products.Commands.CreateProduct
 {
-    public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand>
+    public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand,int>
     {
         private readonly IRepositoryAsync<Product> _productRepository;
         private readonly IMapper _mapper;
@@ -18,11 +18,11 @@ namespace ThinkBridgeShop.Application.Features.Products.Commands.CreateProduct
             _mapper = mapper;
         }
 
-        public async  Task<Unit> Handle(CreateProductCommand request, CancellationToken cancellationToken)
+        public async  Task<int> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
             var product=_mapper.Map<Product>(request);
             var response=await _productRepository.CreateAsync(product);
-            return Unit.Value;
+            return response.Id;
         }
 
 

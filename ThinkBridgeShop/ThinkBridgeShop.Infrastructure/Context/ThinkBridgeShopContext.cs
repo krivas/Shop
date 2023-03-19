@@ -1,10 +1,12 @@
 ﻿using System;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using ThinkBridgeShop.Domain.Entities;
 
 namespace ThinkBridgeShop.Infrastructure.Context
 {
-	public class ThinkBridgeShopContext : DbContext
+	public class ThinkBridgeShopContext : IdentityDbContext<IdentityUser>
 	{
         public ThinkBridgeShopContext(DbContextOptions<ThinkBridgeShopContext> options)
          : base(options)

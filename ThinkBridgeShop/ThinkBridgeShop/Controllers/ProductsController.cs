@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ThinkBridgeShop.Application.Features.Products.Commands.CreateProduct;
 using ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct;
@@ -15,6 +16,7 @@ using ThinkBridgeShop.Application.Features.Products.Queries.GetProducts;
 namespace ThinkBridgeShop.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly IMediator _mediator;

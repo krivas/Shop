@@ -1,7 +1,14 @@
 ﻿using System;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using Microsoft.OpenApi.Models;
 using ThinkBridgeShop.Application;
 using ThinkBridgeShop.Infrastructure;
+using ThinkBridgeShop.Infrastructure.Context;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
 
 namespace ThinkBridgeShop
 {
@@ -14,6 +21,7 @@ namespace ThinkBridgeShop
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwagger();
             builder.Services.AddDataServicesRegistration(builder.Configuration);
+            builder.Services.AddJwtToken(builder.Configuration);
             builder.Services.AddApplicationServices();
 
             return builder.Build();
@@ -37,6 +45,37 @@ namespace ThinkBridgeShop
                     }
                 });
             });
+        }
+        public static void AddJwtToken(this IServiceCollection services,IConfiguration configuration)
+        {
+            services.AddIdentity<IdentityUser, IdentityRole>(cfg => cfg.User.RequireUniqueEmail = true).AddEntityFrameworkStores<ThinkBridgeShopContext>().AddDefaultTokenProviders();
+
+            var audience = configuration["JwtSettings:Audience"];
+            var issuer = configuration["JwtSettings:Issuer"];
+            var key = configuration["JwtSettings:Key"];
+            // Adding Authentication
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+
+            // Adding Jwt Bearer
+            .AddJwtBearer(options =>
+            {
+                options.SaveToken = true;
+                options.RequireHttpsMetadata = false;
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidAudience = audience,
+                    ValidIssuer = issuer,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))
+                };
+            });
+
         }
         public static WebApplication ConfigurePipeline(this WebApplication app)
         {
