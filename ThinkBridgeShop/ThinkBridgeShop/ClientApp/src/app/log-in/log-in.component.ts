@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from '../../Models/User';
+import { User } from '../../Models/LoginUser';
 import { DataService } from '../../Services/data.service';
 import { Router } from '@angular/router';
 @Component({
@@ -13,8 +13,7 @@ export class LogInComponent implements OnInit {
 
   ngOnInit(): void {
    this.dataService.getData().subscribe(response=>{
-    console.log("response,,,,,");
-    console.log(response);
+
     if (response)
       this.router.navigate(['/products'])
    });
