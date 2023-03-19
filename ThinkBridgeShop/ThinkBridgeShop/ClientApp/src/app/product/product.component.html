@@ -1,0 +1,42 @@
+<form #productForm="ngForm">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" id="name" name="name" class="form-control" [(ngModel)]="product.name" required>
+    <div *ngIf="productForm.submitted && productForm.controls.name.errors?.required" class="text-danger">The name is required</div>
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <input type="text" id="description" name="description" class="form-control" [(ngModel)]="product.description" required>
+    <div *ngIf="productForm.submitted && productForm.controls.description.errors?.required" class="text-danger">The description is required</div>
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Price</label>
+    <input type="text" id="price" name="price" class="form-control" [(ngModel)]="product.price" required>
+    <div *ngIf="productForm.submitted && productForm.controls.price.errors?.required" class="text-danger">The price is required</div>
+  </div>
+  
+    <button (click)="submit(productForm)" class="btn btn-primary" style="margin-right:5px;">Save</button>
+  <button (click)="editProduct(productForm)" class="btn btn-success">Edit</button>
+  <div *ngIf="displayError" class="text-danger">{{displayError}}</div>
+</form>
+
+
+<table class="table" >
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products;let i=index">
+      <td>{{product.name}}</td>
+      <td>{{product.description}}</td>
+      <td>{{product.price}}</td>
+      <td><button class="btn btn-danger" (click)="delete(product,i)" >Delete</button></td>
+      <td><button class="btn btn-success"(click)="edit(product)" >Edit</button></td>
+    </tr>
+  </tbody>
+ 
+</table>

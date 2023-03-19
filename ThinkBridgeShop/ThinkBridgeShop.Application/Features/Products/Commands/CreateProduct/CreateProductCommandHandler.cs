@@ -21,7 +21,6 @@ namespace ThinkBridgeShop.Application.Features.Products.Commands.CreateProduct
         public async  Task<Unit> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
             var product=_mapper.Map<Product>(request);
-            product.Price = decimal.Round(product.Price, 2, MidpointRounding.AwayFromZero);
             var response=await _productRepository.CreateAsync(product);
             return Unit.Value;
         }
