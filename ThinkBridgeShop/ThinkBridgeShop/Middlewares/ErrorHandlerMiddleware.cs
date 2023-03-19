@@ -43,7 +43,6 @@ namespace ThinkBridgeShop.Middlewares
                     break;
 
                 case NotFoundException e:
-                    result=error.Message;
                     response.StatusCode = (int)HttpStatusCode.NotFound;
                     break;
 
@@ -52,8 +51,7 @@ namespace ThinkBridgeShop.Middlewares
                     response.StatusCode = (int)HttpStatusCode.InternalServerError;
                     break;
             }
-            if (!string.IsNullOrEmpty(result))
-                await response.WriteAsync(JsonSerializer.Serialize(result));
+
 
             if (validationsErrors.Count > 0)
             {

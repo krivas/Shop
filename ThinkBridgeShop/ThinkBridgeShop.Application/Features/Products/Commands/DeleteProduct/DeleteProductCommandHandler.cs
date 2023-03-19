@@ -27,7 +27,7 @@ namespace ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct
             if (exists)
                 await _productRepository.DeleteAsync(product);
             else
-                throw new NotFoundException("Product", "Id");
+                throw new NotFoundException();
 
             return Unit.Value;
         }

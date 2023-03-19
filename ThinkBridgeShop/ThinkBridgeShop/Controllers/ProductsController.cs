@@ -24,7 +24,7 @@ namespace ThinkBridgeShop.Controllers
             _mediator = mediator;
         }
         [HttpGet]
-        public async Task<IActionResult> Get(GetProductsQuery query)
+        public async Task<IActionResult> Get([FromQuery] GetProductsQuery query)
         {
             var response = await _mediator.Send(query);
             return Ok(response);

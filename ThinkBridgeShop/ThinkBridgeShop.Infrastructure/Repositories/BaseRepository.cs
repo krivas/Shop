@@ -42,9 +42,9 @@ namespace ThinkBridgeShop.Infrastructure.Repositories
             return false;
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IEnumerable<T>> GetAllAsync(int page,int pageSize)
         {
-            return await _context.Set<T>().ToListAsync();
+            return await _context.Set<T>().Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
         }
     }
 }

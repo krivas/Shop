@@ -26,7 +26,7 @@ namespace ThinkBridgeShop.Application.Features.Products.Commands.UpdateProduct
             product.Price = decimal.Round(product.Price, 2, MidpointRounding.AwayFromZero);
             var exists=await _productRepository.ExistsAsync(product.Id);
             if (exists == false)
-                throw new NotFoundException("Product","Id");
+                throw new NotFoundException();
             else
             await _productRepository.UpdateAsync(product);
             return Unit.Value;

@@ -21,7 +21,7 @@ namespace ThinkBridgeShop.Application.Features.Products.Queries.GetProducts
         }
         public async Task<IEnumerable<ProductDto>> Handle(GetProductsQuery request, CancellationToken cancellationToken)
         {   
-           var products=await _productRepository.GetAllAsync();
+           var products=await _productRepository.GetAllAsync(request.Page,request.PageSize);
             return  _mapper.Map<ProductDto[]>(products); ;
         }
     }
@@ -38,7 +38,11 @@ namespace ThinkBridgeShop.Application.Features.Products.Queries.GetProducts
     {
         public GetProductQueryValidator()
         {
+            RuleFor(p => p.PageSize)
+            .GreaterThan(0).WithMessage("{PageSize} must be greater than 0.");
 
+            RuleFor(p => p.Page)
+            .GreaterThan(0).WithMessage("{Page} must be greater than 0.");
         }
 
 
