@@ -16,7 +16,6 @@ using ThinkBridgeShop.Application.Features.Products.Queries.GetProducts;
 namespace ThinkBridgeShop.Controllers
 {
     [Route("api/[controller]")]
-    [Authorize]
     public class ProductsController : Controller
     {
         private readonly IMediator _mediator;

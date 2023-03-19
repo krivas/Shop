@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2QKNEN1DWoW+3brir5XtfGMpHJZITRibysBBDqMKrBGd8y7uxaWc4WtnVfQPeiSVIwxC9mq38/boXR1DOQZd9w==",
+  "dgSpecHash": "fQ1GEgs7nznr6CQbvVo+t3LainsnODO1N8FlRFM+Pc4o+J7xbZiEeuq8nDvcZn8ecDpmTiQvU4sR0DwjSKJlEQ==",
   "success": true,
   "projectFilePath": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/ThinkBridgeShop.Application.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "/Users/kevinrivas/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
+    "/Users/kevinrivas/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/kevinrivas/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

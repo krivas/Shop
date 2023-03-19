@@ -9,6 +9,7 @@ using ThinkBridgeShop.Infrastructure;
 using ThinkBridgeShop.Infrastructure.Context;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
+using ThinkBridgeShop.Middlewares;
 
 namespace ThinkBridgeShop
 {
@@ -92,7 +93,10 @@ namespace ThinkBridgeShop
 
             app.UseStaticFiles();
             app.UseAuthentication();
+            app.UseCustomExceptionHandler();
             app.UseAuthorization();
+
+            
 
             app.MapControllerRoute(
                 name: "default",

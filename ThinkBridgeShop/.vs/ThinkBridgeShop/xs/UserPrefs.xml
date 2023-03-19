@@ -1,39 +1,46 @@
 ﻿<Properties StartupConfiguration="{547E27FB-AE34-4D47-AB56-A16090FE2C48}|Default">
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommandHandler.cs" relfile="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommandHandler.cs" line="23" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThinkBridgeShop/StartupExtension.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThinkBridgeShop.Application/Common/PipeLineBehavior/ValidationBehavior.cs">
     <Files>
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommandHandler.cs" Line="23" Column="55" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/DeleteProduct/DeleteProductCommand.cs" Line="7" Column="6" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/DeleteProduct/DeleteProductCommandHandler.cs" Line="15" Column="9" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommand.cs" Line="14" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommandHandler.cs" Line="26" Column="44" />
-      <File FileName="ThinkBridgeShop.Domain/Entities/Product.cs" Line="4" Column="39" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommandHandler.cs" Line="43" Column="13" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/DeleteProduct/DeleteProductCommand.cs" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/DeleteProduct/DeleteProductCommandHandler.cs" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommand.cs" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommandHandler.cs" />
+      <File FileName="ThinkBridgeShop.Domain/Entities/Product.cs" />
       <File FileName="ThinkBridgeShop/Program.cs" Line="7" Column="39" />
-      <File FileName="ThinkBridgeShop/StartupExtension.cs" Line="50" Column="129" />
+      <File FileName="ThinkBridgeShop/StartupExtension.cs" Line="96" Column="45" />
       <File FileName="ThinkBridgeShop/WeatherForecast.cs" />
       <File FileName="ThinkBridgeShop/ClientApp/proxy.conf.js" />
-      <File FileName="ThinkBridgeShop.Infrastructure/Interfaces/IRepository.cs" Line="14" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommand.cs" Line="9" Column="28" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Queries/GetProducts/GetProductsQueryHandler.cs" Line="23" Column="10" />
-      <File FileName="ThinkBridgeShop.Domain/Dtos/ProductDto.cs" Line="6" Column="8" />
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Queries/GetProducts/GetProductsQuery.cs" Line="13" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Features/ApplicationServicesRegistration.cs" Line="21" Column="75" />
-      <File FileName="ThinkBridgeShop/Controllers/ProductController.cs" Line="37" Column="1" />
-      <File FileName="ThinkBridgeShop.Domain/Entities/AuditableEntity.cs" Line="11" Column="1" />
-      <File FileName="ThinkBridgeShop.Infrastructure/Repositories/BaseRepository.cs" Line="11" Column="53" />
-      <File FileName="ThinkBridgeShop.Infrastructure/Context/ThinkBridgeShopContext.cs" Line="32" Column="1" />
-      <File FileName="ThinkBridgeShop.Infrastructure/DataServicesRegistration.cs" Line="18" Column="79" />
-      <File FileName="ThinkBridgeShop/appsettings.json" Line="11" Column="61" />
-      <File FileName="ThinkBridgeShop/appsettings.Development.json" Line="10" Column="25" />
-      <File FileName="ThinkBridgeShop.Infrastructure/Migrations/20230318183435_InitialCreate.cs" Line="22" Column="71" />
-      <File FileName="ThinkBridgeShop.Infrastructure/Repositories/ProductRepository.cs" Line="11" Column="10" />
-      <File FileName="ThinkBridgeShop.Infrastructure/Migrations/ThinkBridgeShopContextModelSnapshot.cs" Line="1" Column="1" />
-      <File FileName="ThinkBridgeShop.Infrastructure/Migrations/20230318200232_ModifyLastUpdateToBeEmpty.cs" Line="1" Column="1" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommand.cs" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Queries/GetProducts/GetProductsQueryHandler.cs" />
+      <File FileName="ThinkBridgeShop.Domain/Dtos/ProductDto.cs" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Queries/GetProducts/GetProductsQuery.cs" />
+      <File FileName="ThinkBridgeShop.Domain/Entities/AuditableEntity.cs" />
+      <File FileName="ThinkBridgeShop.Infrastructure/Repositories/BaseRepository.cs" />
+      <File FileName="ThinkBridgeShop.Infrastructure/Context/ThinkBridgeShopContext.cs" />
+      <File FileName="ThinkBridgeShop.Infrastructure/DataServicesRegistration.cs" />
+      <File FileName="ThinkBridgeShop/appsettings.json" />
+      <File FileName="ThinkBridgeShop/appsettings.Development.json" />
+      <File FileName="ThinkBridgeShop.Infrastructure/Migrations/20230318183435_InitialCreate.cs" />
+      <File FileName="ThinkBridgeShop.Infrastructure/Repositories/ProductRepository.cs" />
+      <File FileName="ThinkBridgeShop.Infrastructure/Migrations/ThinkBridgeShopContextModelSnapshot.cs" />
+      <File FileName="ThinkBridgeShop.Infrastructure/Migrations/20230318200232_ModifyLastUpdateToBeEmpty.cs" />
+      <File FileName="ThinkBridgeShop.Infrastructure/Migrations/20230319031246_Identity.cs" />
+      <File FileName="ThinkBridgeShop/Controllers/SecurityController.cs" />
+      <File FileName="ThinkBridgeShop/Controllers/ProductsController.cs" Line="36" Column="1" />
+      <File FileName="ThinkBridgeShop.Domain/Dtos/RegisterModel.cs" />
+      <File FileName="ThinkBridgeShop.Domain/Dtos/User.cs" />
+      <File FileName="ThinkBridgeShop.Application/ApplicationServicesRegistration.cs" Line="30" Column="2" />
+      <File FileName="ThinkBridgeShop.Application/Exceptions/NotFoundException.cs" Line="4" Column="44" />
+      <File FileName="ThinkBridgeShop/Middlewares/ErrorHandlerMiddleware.cs" Line="46" Column="20" />
+      <File FileName="ThinkBridgeShop/Middlewares/MiddlewareExtension.cs" Line="13" Column="1" />
+      <File FileName="ThinkBridgeShop.Application/Common/PipeLineBehavior/ValidationBehavior.cs" Line="19" Column="51" />
+      <File FileName="ThinkBridgeShop.Application/Exceptions/ValidationException.cs" Line="4" Column="11" />
+      <File FileName="ThinkBridgeShop/Controllers/WeatherForecastController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -41,18 +48,19 @@
           <Node name="ThinkBridgeShop" expanded="True">
             <Node name="ThinkBridgeShop" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-              <Node name="StartupExtension.cs" selected="True" />
+              <Node name="Middlewares" expanded="True" />
             </Node>
             <Node name="ThinkBridgeShop.Application" expanded="True">
+              <Node name="Common" expanded="True">
+                <Node name="PipeLineBehavior" expanded="True">
+                  <Node name="ValidationBehavior.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Exceptions" expanded="True" />
               <Node name="Features" expanded="True">
                 <Node name="Products" expanded="True">
                   <Node name="Commands" expanded="True">
-                    <Node name="DeleteProduct" expanded="True" />
-                    <Node name="UpdateProduct" expanded="True" />
-                  </Node>
-                  <Node name="Queries" expanded="True">
-                    <Node name="GetProducts" expanded="True" />
+                    <Node name="CreateProduct" expanded="True" />
                   </Node>
                 </Node>
               </Node>

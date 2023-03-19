@@ -6,6 +6,8 @@ using MediatR;
 using ThinkBridgeShop.Application.Features.Products.Commands.CreateProduct;
 using ThinkBridgeShop.Application.Features.Products.Commands.UpdateProduct;
 using ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct;
+using ThinkBridgeShop.Application.Common.PipeLineBehavior;
+using FluentValidation;
 
 namespace ThinkBridgeShop.Application
 {
@@ -15,6 +17,8 @@ namespace ThinkBridgeShop.Application
         {
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            services.AddTransient(typeof(IPipelineBehavior<,>),typeof(ValidationBehavior<,>));
             services.AddMediatR(typeof(CreateProductCommandHandler).Assembly);
             services.AddMediatR(typeof(UpdateProductCommandHandler).Assembly);
             services.AddMediatR(typeof(DeleteProductCommandHandler).Assembly);

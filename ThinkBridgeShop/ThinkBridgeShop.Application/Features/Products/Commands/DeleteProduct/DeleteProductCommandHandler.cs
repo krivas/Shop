@@ -2,6 +2,7 @@
 using AutoMapper;
 using FluentValidation;
 using MediatR;
+using ThinkBridgeShop.Application.Exceptions;
 using ThinkBridgeShop.Domain.Entities;
 using ThinkBridgeShop.Infrastructure.Interfaces;
 
@@ -25,6 +26,9 @@ namespace ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct
             var exists = await _productRepository.ExistsAsync(product.Id);
             if (exists)
                 await _productRepository.DeleteAsync(product);
+            else
+                throw new NotFoundException("Product", "Id");
+
             return Unit.Value;
         }
 
@@ -42,6 +46,9 @@ namespace ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct
     {
         public DeleteProductCommandValidator()
         {
+            RuleFor(x => x.Id)
+             .NotNull()
+             .GreaterThan(0);
 
         }
 
