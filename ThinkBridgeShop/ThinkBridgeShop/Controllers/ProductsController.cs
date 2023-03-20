@@ -15,6 +15,7 @@ using ThinkBridgeShop.Application.Features.Products.Queries.GetProducts;
 
 namespace ThinkBridgeShop.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     public class ProductsController : Controller
     {

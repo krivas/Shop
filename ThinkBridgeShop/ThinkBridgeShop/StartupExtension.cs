@@ -10,6 +10,7 @@ using ThinkBridgeShop.Infrastructure.Context;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using ThinkBridgeShop.Middlewares;
+using ThinkBridgeShop.Application.Features.Models.Authentication;
 
 namespace ThinkBridgeShop
 {
@@ -49,6 +50,7 @@ namespace ThinkBridgeShop
         }
         public static void AddJwtToken(this IServiceCollection services,IConfiguration configuration)
         {
+            services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
             services.AddIdentity<IdentityUser, IdentityRole>(cfg => cfg.User.RequireUniqueEmail = true).AddEntityFrameworkStores<ThinkBridgeShopContext>().AddDefaultTokenProviders();
 
             var audience = configuration["JwtSettings:Audience"];

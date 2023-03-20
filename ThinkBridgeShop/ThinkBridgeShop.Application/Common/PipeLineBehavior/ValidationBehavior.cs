@@ -2,7 +2,6 @@
 using FluentValidation;
 using FluentValidation.Results;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 
 namespace ThinkBridgeShop.Application.Common.PipeLineBehavior

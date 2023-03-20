@@ -6,7 +6,7 @@ using ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct;
 using ThinkBridgeShop.Application.Features.Products.Queries.GetProducts;
 using ThinkBridgeShop.Domain.Dtos;
 using ThinkBridgeShop.Domain.Entities;
-using ThinkBridgeShop.Infrastructure.Interfaces;
+using ThinkBridgeShop.Application.Contracts.Repositories;
 
 namespace ThinkBridgeShop.Application.Features.Products.Queries.GetProducts
 {

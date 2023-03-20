@@ -13,3 +13,5 @@
 /Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/refint/ThinkBridgeShop.Infrastructure.dll
 /Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/ThinkBridgeShop.Infrastructure.pdb
 /Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/obj/Debug/net6.0/ref/ThinkBridgeShop.Infrastructure.dll
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/bin/Debug/net6.0/ThinkBridgeShop.Application.dll
+/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Infrastructure/bin/Debug/net6.0/ThinkBridgeShop.Application.pdb

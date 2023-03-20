@@ -4,8 +4,7 @@ using FluentValidation;
 using MediatR;
 using ThinkBridgeShop.Application.Exceptions;
 using ThinkBridgeShop.Domain.Entities;
-using ThinkBridgeShop.Infrastructure.Interfaces;
-using ThinkBridgeShop.Infrastructure.Repositories;
+using ThinkBridgeShop.Application.Contracts.Repositories;
 
 namespace ThinkBridgeShop.Application.Features.Products.Commands.UpdateProduct
 {

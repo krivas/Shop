@@ -1,19 +1,15 @@
 ﻿<Properties StartupConfiguration="{547E27FB-AE34-4D47-AB56-A16090FE2C48}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThinkBridgeShop.Application/Common/PipeLineBehavior/ValidationBehavior.cs">
+  <MonoDevelop.Ide.ItemProperties.ThinkBridgeShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThinkBridgeShop.Infrastructure/Services/AuthenticationService.cs">
     <Files>
-      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommandHandler.cs" Line="43" Column="13" />
+      <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommandHandler.cs" />
       <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/DeleteProduct/DeleteProductCommand.cs" />
       <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/DeleteProduct/DeleteProductCommandHandler.cs" />
       <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommand.cs" />
       <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/UpdateProduct/UpdateProductCommandHandler.cs" />
       <File FileName="ThinkBridgeShop.Domain/Entities/Product.cs" />
-      <File FileName="ThinkBridgeShop/Program.cs" Line="7" Column="39" />
-      <File FileName="ThinkBridgeShop/StartupExtension.cs" Line="96" Column="45" />
-      <File FileName="ThinkBridgeShop/WeatherForecast.cs" />
+      <File FileName="ThinkBridgeShop/Program.cs" />
+      <File FileName="ThinkBridgeShop/StartupExtension.cs" />
       <File FileName="ThinkBridgeShop/ClientApp/proxy.conf.js" />
       <File FileName="ThinkBridgeShop.Application/Features/Products/Commands/CreateProduct/CreateProductCommand.cs" />
       <File FileName="ThinkBridgeShop.Application/Features/Products/Queries/GetProducts/GetProductsQueryHandler.cs" />
@@ -22,7 +18,7 @@
       <File FileName="ThinkBridgeShop.Domain/Entities/AuditableEntity.cs" />
       <File FileName="ThinkBridgeShop.Infrastructure/Repositories/BaseRepository.cs" />
       <File FileName="ThinkBridgeShop.Infrastructure/Context/ThinkBridgeShopContext.cs" />
-      <File FileName="ThinkBridgeShop.Infrastructure/DataServicesRegistration.cs" />
+      <File FileName="ThinkBridgeShop.Infrastructure/DataServicesRegistration.cs" Line="1" Column="1" />
       <File FileName="ThinkBridgeShop/appsettings.json" />
       <File FileName="ThinkBridgeShop/appsettings.Development.json" />
       <File FileName="ThinkBridgeShop.Infrastructure/Migrations/20230318183435_InitialCreate.cs" />
@@ -31,16 +27,17 @@
       <File FileName="ThinkBridgeShop.Infrastructure/Migrations/20230318200232_ModifyLastUpdateToBeEmpty.cs" />
       <File FileName="ThinkBridgeShop.Infrastructure/Migrations/20230319031246_Identity.cs" />
       <File FileName="ThinkBridgeShop/Controllers/SecurityController.cs" />
-      <File FileName="ThinkBridgeShop/Controllers/ProductsController.cs" Line="36" Column="1" />
+      <File FileName="ThinkBridgeShop/Controllers/ProductsController.cs" />
       <File FileName="ThinkBridgeShop.Domain/Dtos/RegisterModel.cs" />
       <File FileName="ThinkBridgeShop.Domain/Dtos/User.cs" />
-      <File FileName="ThinkBridgeShop.Application/ApplicationServicesRegistration.cs" Line="30" Column="2" />
-      <File FileName="ThinkBridgeShop.Application/Exceptions/NotFoundException.cs" Line="4" Column="44" />
-      <File FileName="ThinkBridgeShop/Middlewares/ErrorHandlerMiddleware.cs" Line="46" Column="20" />
-      <File FileName="ThinkBridgeShop/Middlewares/MiddlewareExtension.cs" Line="13" Column="1" />
-      <File FileName="ThinkBridgeShop.Application/Common/PipeLineBehavior/ValidationBehavior.cs" Line="19" Column="51" />
-      <File FileName="ThinkBridgeShop.Application/Exceptions/ValidationException.cs" Line="4" Column="11" />
-      <File FileName="ThinkBridgeShop/Controllers/WeatherForecastController.cs" Line="1" Column="1" />
+      <File FileName="ThinkBridgeShop.Application/ApplicationServicesRegistration.cs" />
+      <File FileName="ThinkBridgeShop.Application/Exceptions/NotFoundException.cs" />
+      <File FileName="ThinkBridgeShop/Middlewares/ErrorHandlerMiddleware.cs" />
+      <File FileName="ThinkBridgeShop/Middlewares/MiddlewareExtension.cs" />
+      <File FileName="ThinkBridgeShop.Application/Common/PipeLineBehavior/ValidationBehavior.cs" Line="19" Column="10" />
+      <File FileName="ThinkBridgeShop.Application/Exceptions/ValidationException.cs" />
+      <File FileName="ThinkBridgeShop.Infrastructure/Services/AuthenticationService.cs" Line="13" Column="37" />
+      <File FileName="ThinkBridgeShop.Application/Models/Authentication/JwtSettings.cs" Line="14" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -51,35 +48,25 @@
               <Node name="Middlewares" expanded="True" />
             </Node>
             <Node name="ThinkBridgeShop.Application" expanded="True">
-              <Node name="Common" expanded="True">
-                <Node name="PipeLineBehavior" expanded="True">
-                  <Node name="ValidationBehavior.cs" selected="True" />
-                </Node>
+              <Node name="Contracts" expanded="True">
+                <Node name="Folder" selected="True" />
               </Node>
-              <Node name="Exceptions" expanded="True" />
-              <Node name="Features" expanded="True">
-                <Node name="Products" expanded="True">
-                  <Node name="Commands" expanded="True">
-                    <Node name="CreateProduct" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-            <Node name="ThinkBridgeShop.Domain" expanded="True">
-              <Node name="Dtos" expanded="True" />
-              <Node name="Entities" expanded="True" />
             </Node>
             <Node name="ThinkBridgeShop.Infrastructure" expanded="True">
               <Node name="Context" expanded="True" />
               <Node name="Interfaces" expanded="True" />
               <Node name="Repositories" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ThinkBridgeShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

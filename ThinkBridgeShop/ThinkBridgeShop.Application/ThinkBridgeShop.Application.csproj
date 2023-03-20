@@ -17,6 +17,12 @@
     <None Remove="Exceptions\" />
     <None Remove="Common\" />
     <None Remove="Common\PipeLineBehavior\" />
+    <None Remove="Features\User\" />
+    <None Remove="Features\User\Queries\" />
+    <None Remove="Features\User\Commands\" />
+    <None Remove="Contracts\" />
+    <None Remove="Contracts\Repositories\" />
+    <None Remove="Contracts\Identity\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -29,6 +35,12 @@
     <Folder Include="Exceptions\" />
     <Folder Include="Common\" />
     <Folder Include="Common\PipeLineBehavior\" />
+    <Folder Include="Features\User\" />
+    <Folder Include="Features\User\Queries\" />
+    <Folder Include="Features\User\Commands\" />
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\Repositories\" />
+    <Folder Include="Contracts\Identity\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -40,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ThinkBridgeShop.Domain\ThinkBridgeShop.Domain.csproj" />
-    <ProjectReference Include="..\ThinkBridgeShop.Infrastructure\ThinkBridgeShop.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Contracts\Folder\IAuthenticationService.cs" />
   </ItemGroup>
 </Project>

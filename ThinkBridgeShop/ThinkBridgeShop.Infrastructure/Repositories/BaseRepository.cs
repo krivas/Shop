@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using ThinkBridgeShop.Infrastructure.Context;
-using ThinkBridgeShop.Infrastructure.Interfaces;
+using ThinkBridgeShop.Application.Contracts.Repositories;
 
 namespace ThinkBridgeShop.Infrastructure.Repositories
 {

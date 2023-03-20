@@ -8,6 +8,8 @@ using ThinkBridgeShop.Application.Features.Products.Commands.UpdateProduct;
 using ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct;
 using ThinkBridgeShop.Application.Common.PipeLineBehavior;
 using FluentValidation;
+using ThinkBridgeShop.Application.Features.User.Queries;
+using ThinkBridgeShop.Application.Features.User.Commands;
 
 namespace ThinkBridgeShop.Application
 {
@@ -23,6 +25,8 @@ namespace ThinkBridgeShop.Application
             services.AddMediatR(typeof(UpdateProductCommandHandler).Assembly);
             services.AddMediatR(typeof(DeleteProductCommandHandler).Assembly);
             services.AddMediatR(typeof(GetProductsQueryHandler).Assembly);
+            services.AddMediatR(typeof(CreateUserCommandHandler).Assembly);
+            services.AddMediatR(typeof(LoginQueryHandler).Assembly);
 
             return services;
         }

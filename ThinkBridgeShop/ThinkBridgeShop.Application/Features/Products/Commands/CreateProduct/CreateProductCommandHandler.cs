@@ -4,7 +4,7 @@ using FluentValidation;
 using System.Globalization;
 using MediatR;
 using ThinkBridgeShop.Domain.Entities;
-using ThinkBridgeShop.Infrastructure.Interfaces;
+using ThinkBridgeShop.Application.Contracts.Repositories;
 
 namespace ThinkBridgeShop.Application.Features.Products.Commands.CreateProduct
 {

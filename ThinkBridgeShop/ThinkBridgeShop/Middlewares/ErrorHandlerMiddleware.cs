@@ -37,13 +37,24 @@ namespace ThinkBridgeShop.Middlewares
             var result = string.Empty;
             switch (error)
             {
-                case ValidationException e:
-                    validationsErrors =e.ErrorsDictionary;
+                case BadRequestException e:
+                    result=JsonSerializer.Serialize(e.Message);
                     response.StatusCode = (int)HttpStatusCode.BadRequest;
                     break;
 
+                case UnAuthorizedException e:
+                    result = JsonSerializer.Serialize(e.Message);
+                    response.StatusCode = (int)HttpStatusCode.Unauthorized;
+                    break;
+
+
                 case NotFoundException e:
                     response.StatusCode = (int)HttpStatusCode.NotFound;
+                    break;
+
+                case ValidationException e:
+                    validationsErrors =e.ErrorsDictionary;
+                    response.StatusCode = (int)HttpStatusCode.BadRequest;
                     break;
 
                 default:
@@ -51,7 +62,8 @@ namespace ThinkBridgeShop.Middlewares
                     response.StatusCode = (int)HttpStatusCode.InternalServerError;
                     break;
             }
-
+            if (!string.IsNullOrEmpty(result))
+                await response.WriteAsync(result);
 
             if (validationsErrors.Count > 0)
             {
