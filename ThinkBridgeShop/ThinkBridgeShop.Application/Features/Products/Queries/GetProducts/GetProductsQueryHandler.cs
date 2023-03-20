@@ -7,10 +7,11 @@ using ThinkBridgeShop.Application.Features.Products.Queries.GetProducts;
 using ThinkBridgeShop.Domain.Dtos;
 using ThinkBridgeShop.Domain.Entities;
 using ThinkBridgeShop.Application.Contracts.Repositories;
+using System.Collections.Generic;
 
 namespace ThinkBridgeShop.Application.Features.Products.Queries.GetProducts
 {
-    public class GetProductsQueryHandler : IRequestHandler<GetProductsQuery, IEnumerable<ProductDto>>
+    public class GetProductsQueryHandler : IRequestHandler<GetProductsQuery, List<ProductDto>>
     {
         private readonly IRepositoryAsync<Product> _productRepository;
         private readonly IMapper _mapper;
@@ -19,10 +20,10 @@ namespace ThinkBridgeShop.Application.Features.Products.Queries.GetProducts
             _productRepository = productRepository;
             _mapper = mapper;
         }
-        public async Task<IEnumerable<ProductDto>> Handle(GetProductsQuery request, CancellationToken cancellationToken)
+        public async Task<List<ProductDto>> Handle(GetProductsQuery request, CancellationToken cancellationToken)
         {   
            var products=await _productRepository.GetAllAsync(request.Page,request.PageSize);
-            return  _mapper.Map<ProductDto[]>(products); ;
+            return  _mapper.Map<List<ProductDto>>(products); ;
         }
     }
 

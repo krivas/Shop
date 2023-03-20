@@ -1,0 +1,234 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.UnitTests/ThinkBridgeShop.UnitTests.csproj": {}
+  },
+  "projects": {
+    "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/ThinkBridgeShop.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/ThinkBridgeShop.Application.csproj",
+        "projectName": "ThinkBridgeShop.Application",
+        "projectPath": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/ThinkBridgeShop.Application.csproj",
+        "packagesPath": "/Users/kevinrivas/.nuget/packages/",
+        "outputPath": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kevinrivas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Domain/ThinkBridgeShop.Domain.csproj": {
+                "projectPath": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Domain/ThinkBridgeShop.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Domain/ThinkBridgeShop.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Domain/ThinkBridgeShop.Domain.csproj",
+        "projectName": "ThinkBridgeShop.Domain",
+        "projectPath": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Domain/ThinkBridgeShop.Domain.csproj",
+        "packagesPath": "/Users/kevinrivas/.nuget/packages/",
+        "outputPath": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kevinrivas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.UnitTests/ThinkBridgeShop.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.UnitTests/ThinkBridgeShop.UnitTests.csproj",
+        "projectName": "ThinkBridgeShop.UnitTests",
+        "projectPath": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.UnitTests/ThinkBridgeShop.UnitTests.csproj",
+        "packagesPath": "/Users/kevinrivas/.nuget/packages/",
+        "outputPath": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.UnitTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kevinrivas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/ThinkBridgeShop.Application.csproj": {
+                "projectPath": "/Users/kevinrivas/Desktop/Shop/ThinkBridgeShop/ThinkBridgeShop.Application/ThinkBridgeShop.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
