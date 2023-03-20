@@ -23,9 +23,20 @@ namespace ThinkBridgeShop.UnitTests.Products.Commands
         }
 
         [Fact]
-        public async Task Test_CreateProduct()
+        public async Task Test_DeleteProduct()
         {
-           
+            var handler = new DeleteProductCommandHandler(_mockProductRepository.Object, _mapper);
+            var deleteProductCommand = new DeleteProductCommand()
+            {
+                Id = 1,
+            };
+            var result = await handler.Handle(deleteProductCommand, CancellationToken.None);
+            var response = await _mockProductRepository.Object.GetAllAsync(1, 8);
+            response.ShouldNotBeNull();
+            response.ShouldNotBeEmpty();
+            var updatedProduct = response.FirstOrDefault(x => x.Id == deleteProductCommand.Id);
+            updatedProduct.ShouldBeNull();
+            response.Count().ShouldBe(7);
         }
     }
 }
