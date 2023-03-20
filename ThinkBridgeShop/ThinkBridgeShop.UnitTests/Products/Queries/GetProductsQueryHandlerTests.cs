@@ -28,7 +28,9 @@ namespace ThinkBridgeShop.UnitTests.Products.Queries
             var handler = new GetProductsQueryHandler(_mockProductRepository.Object,_mapper);
 			var getProductQuery =new GetProductsQuery() { Page=1,PageSize=4};
 			var result=await handler.Handle(getProductQuery,CancellationToken.None);
-			result.ShouldBeOfType<List<ProductDto>>();
+            result.ShouldNotBeNull();
+            result.ShouldNotBeEmpty();
+            result.ShouldBeOfType<List<ProductDto>>();
 			result.Count().ShouldBe(4);
 		}
 	}

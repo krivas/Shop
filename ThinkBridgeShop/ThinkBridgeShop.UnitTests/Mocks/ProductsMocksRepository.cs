@@ -29,8 +29,13 @@ namespace ThinkBridgeShop.UnitTests.Mocks
                      {
                          var productToUpdate = products.FirstOrDefault(x => x.Id == product.Id);
                          if (productToUpdate != null)
-                             productToUpdate = product;
-                         return Task.CompletedTask;
+                         {
+                             productToUpdate.Name = product.Name;
+                             productToUpdate.Description = product.Description;
+                             productToUpdate.Price = product.Price;
+                         }
+                             
+                         return Task.FromResult(productToUpdate);
 
                      });
             mockProductRepository.Setup(x => x.GetAllAsync(It.IsAny<int>(), It.IsAny<int>()))
@@ -45,6 +50,13 @@ namespace ThinkBridgeShop.UnitTests.Mocks
                      {
                          products.Add(product);
                          return product;
+                     });
+
+            mockProductRepository.Setup(repo => repo.ExistsAsync(It.IsAny<int>()))
+                     .ReturnsAsync((int id) =>
+                     {
+                         return products.Any(x => x.Id == id);
+
                      });
             return mockProductRepository;
         }

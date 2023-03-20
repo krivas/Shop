@@ -1,10 +1,10 @@
 ﻿using System;
-using AutoMapper;
-using Moq;
+
 using ThinkBridgeShop.Application.Contracts.Repositories;
 using ThinkBridgeShop.Application.Features.Products.Commands.DeleteProduct;
-using ThinkBridgeShop.Domain.Entities;
 
+using ThinkBridgeShop.Domain.Entities;
+using ThinkBridgeShop.UnitTests.Mocks;
 
 namespace ThinkBridgeShop.UnitTests.Products.Commands
 {
@@ -14,11 +14,18 @@ namespace ThinkBridgeShop.UnitTests.Products.Commands
         private readonly Mock<IRepositoryAsync<Product>> _mockProductRepository;
         public DeleteProductCommandHandlerTests()
         {
+            _mockProductRepository = ProductsMocksRepository.GetProductRepository();
             var configurationProvider = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile<MappingProfile>();
             });
             _mapper = configurationProvider.CreateMapper();
+        }
+
+        [Fact]
+        public async Task Test_CreateProduct()
+        {
+           
         }
     }
 }
