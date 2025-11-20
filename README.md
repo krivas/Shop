@@ -6,7 +6,7 @@ This project is intended as a practice / interview-style exercise for building a
 ## Tech Stack
 
 - **Backend:** C# / ASP.NET Core
-- **Frontend:** TypeScript, HTML, JavaScript
+- **Frontend:** TypeScript, HTML, CSS,Angular
 - **Other:** Standard .NET tooling
 
 > Note: Exact framework version depends on the SDK you use to build/run the project (any modern .NET SDK should work).
